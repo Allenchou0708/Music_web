@@ -17,4 +17,8 @@ With this project, I design a place where people can share their music on.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. insert the URL http://127.0.0.1:5000/ while music_background.py is running.
 
 ## Demo
+![demo](https://github.com/Allenchou0708/Music_web/blob/main/Demo_photo/demo_2.png)
 ![demo](https://github.com/Allenchou0708/Music_web/blob/main/Demo_photo/demo_1.png)
+![demo](https://github.com/Allenchou0708/Music_web/blob/main/Demo_photo/demo_3.png)
+![demo](https://github.com/Allenchou0708/Music_web/blob/main/Demo_photo/demo_4.png)
+![demo](https://github.com/Allenchou0708/Music_web/blob/main/Demo_photo/demo_5.png)
