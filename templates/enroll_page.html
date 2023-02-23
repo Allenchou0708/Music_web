@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll in Music Web</title>
+    <link rel="StyleSheet" href="enroll_page/enroll_page.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="enroll_page/enroll_page.js"></script>
+</head>
+<body>
+    <div class="left_box">
+        <div class="top_box">
+            <a id="logo_box" href="/"><img src="image/music_logo.webp" id="logo"></a>
+        </div>
+        
+        <article>
+            <div class="article_title">
+                <span class="material-icons">settings</span><h1 class="title_text">申請帳號</h1>
+            </div>
+            <div class="article_center ">
+                <form method="get" action="/database" name="enroll_form">
+                    <div class="queation">
+                        <label>帳號名稱</label><input type="text" name="user_name" required maxlength="15">
+                    </div>
+                    <div class="queation">
+                        <label>密碼(八碼以上至少兩英文字母)</label><input type="password" name="passwd" required minlength="8">
+                    </div>
+                    <div class="queation">
+                        <label>請再輸入一次密碼</label><input type="password" name="password" required minlength="8">
+                    </div>
+                    <div class="queation">
+                        <label>電子郵件(必填)</label><input type="email" name="email" value="@gmail.com" required>
+                    </div>
+                    <div class="queation">
+                        <label>信用卡卡號(選填)</label><input type="password" name="card_number" >
+                    </div>
+                    <div class="queation">
+                        <label>照片(選填)</label><input type="file" name="user_photo" value="image/profile.jpg">
+                    </div>
+                    <div class="submit_area">
+                        <input type="submit" value="提交" style="margin-right: 20px;"><input type="reset" value="重新輸入">
+                    </div>
+                </form>
+            </div>
+
+            <div class="docoration_box">
+                <a class="go_back_to_home" href="/">
+                    <span class="material-icons" style="font-size: 22px; margin-right: 5px; display: inline-block;vertical-align: middle;">keyboard_return</span><span style="display: inline-block;vertical-align: middle;">Go Back</span>
+                </a>
+            </div>
+        </article>
+    </div>
+    <footer>
+        <p class="blink">~~~~~~~   Enjoy  Music  , Enjoy Life   ~~~~~~~</p>
+        <div class="for_line"></div>
+        <pre>
+            Copyright@       2022/08/20       Author: Allen Chou       Contect by 30033allen@gmail.com       All rights reserved.
+        </pre>
+    </footer>
+</body>
+</html>

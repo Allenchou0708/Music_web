@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to music_sharing page</title>
+    <link rel="StyleSheet" href="homepage.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="homepage.js"></script>
+</head>
+<body>
+    <header id="run_line_box">
+        <span class="run_line" id="run_line">Attention, May Day , May Day(You can click to cancel)</span>
+    </header>
+    <div class="big_flex_box">
+    <div class="left_box">
+        <div class="top_box">
+            <a id="logo_box" href="/"><img src="image/music_logo.webp" id="logo"></a>
+            <div class="selection_bar">
+                <a class="selection" href="/music_page?page=1&type=最新"><span class="material-icons selection_icons">music_note</span>音樂推薦</a>
+                <a class="selection" href="/news_page"><span class="material-icons selection_icons">feed</span>音樂界新聞</a>
+                <a class="selection" href="/shopping_page"><span class="material-icons selection_icons">shopping_cart</span>購物區</a>
+                <a class="selection" href="/discuss_page"><span class="material-icons selection_icons">groups</span>討論區</a>
+                <a class="selection" href="/about_us_page"><span class="material-icons selection_icons">info</span>贊助我們</a>
+            </div>
+        </div>
+        <article>
+            <div class="article_title">
+                <span class="material-icons">settings</span><h1 class="title_text">系統公告</h1>
+            </div>
+            <div>
+                <div class="article_left">
+                    <span class="material-icons article_icon" style="font-size:72px;" id="left_button">chevron_left</span>
+                </div>
+                <div class="article_center ">
+                    <p class="article_text_box"><a class="system_article" id="system_article_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, culpa!</a></p>
+                    <p class="article_text_box"><a class="system_article" id="system_article_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, culpa!</a></p>
+                    <p class="article_text_box"><a class="system_article" id="system_article_3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, culpa!</a></p>
+                    <p class="article_text_box"><a class="system_article" id="system_article_4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, culpa!</a></p>
+                    <p class="article_text_box"><a class="system_article" id="system_article_5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, culpa!</a></p>
+                </div>
+                <div class="article_left">
+                    <span class="material-icons article_icon" style="font-size:72px; " id="right_button">chevron_right</span>
+                </div>
+            </div>
+            <div class="article_page">
+                <span>Page:</span><span id="page_number"> 1</span>
+            </div>
+            <div class="article_title">
+                <span class="material-icons">queue_music</span><h1 class="title_text">精選音樂</h1><button class="music_button" id="change">換一組?</button><button class="music_button" id="publish">我也要發布</button>
+            </div>
+            <div>
+                <div class="music_box_left">
+                    <a class="music_photo_box"><img src="image/wheveryouare.jfif" class="music_photo"></a>
+                    <div class="details_box">
+                        <div class="details_line"><span>曲名:</span><a class="details_text">...</a></div>
+                        <div class="details_line"><span>作者:</span><a class="details_text">...</a></div>
+                        <div class="details_line"><span>分享者:</span><a class="details_text">...</a></div>
+                        <div class="see_more_box"><a class="details_text see_more" >查看詳情</a></div>
+                    </div>
+                </div>
+                <div class="music_box_left">
+                    <a class="music_photo_box"><img src="image/wheveryouare.jfif" class="music_photo"></a>
+                    <div class="details_box">
+                        <div class="details_line"><span>曲名:</span><a class="details_text">...</a></div>
+                        <div class="details_line"><span>作者:</span><a class="details_text">...</a></div>
+                        <div class="details_line"><span>分享者:</span><a class="details_text">...</a></div>
+                        <div class="see_more_box"><a class="details_text see_more" >查看詳情</a></div>
+                    </div>
+                </div>
+                <div class="music_box_left">
+                    <a class="music_photo_box"><img src="image/wheveryouare.jfif" class="music_photo"></a>
+                    <div class="details_box">
+                        <div class="details_line"><span>曲名:</span><a class="details_text">...</a></div>
+                        <div class="details_line"><span>作者:</span><a class="details_text">...</a></div>
+                        <div class="details_line"><span>分享者:</span><a class="details_text">...</a></div>
+                        <div class="see_more_box"><a class="details_text see_more" >查看詳情</a></div>
+                    </div>
+                </div>
+                <div class="music_box_left">
+                    <a class="music_photo_box"><img src="image/wheveryouare.jfif" class="music_photo"></a>
+                    <div class="details_box">
+                        <div class="details_line"><span>曲名:</span><a class="details_text">...</a></div>
+                        <div class="details_line"><span>作者:</span><a class="details_text">...</a></div>
+                        <div class="details_line"><span>分享者:</span><a class="details_text">...</a></div>
+                        <div class="see_more_box"><a class="details_text see_more" >查看詳情</a></div>
+                </div>
+                <div class="docoration_box"></div>
+            </div>
+            
+        </article>
+    </div>
+    <div class="right_box">
+        <p class="login_title" id="test">會員登入</p>
+        <div class="login">
+            <form method="get" id="login_form" action="/determin">
+                <span class="form_row">
+                    <label class="label">帳號:</label>
+                    <input class="queation" type="text" placeholder="請輸入帳號" name="account">
+                </span>
+                <br>
+                <span class="form_row">
+                    <label class="label">密碼:</label>
+                    <input class="queation" type="password" placeholder="請輸入密碼" name="passwd">
+                </span>
+                <br>
+                <span class="form_row" style="display: inline-block;">
+                    <input type="submit" value="送出" class="login_button">
+                    <!-- <input type="button" value="忘記密碼" class="login_button" id=""> -->
+                    <input type="button" value="申請帳號" class="login_button" id="enroll_in">
+                    <input type="button" value="忘記密碼" class="login_button" id="forget">
+                </span>
+            </form>
+        </div>
+        <p class="login_title my_ad_title">加入會員，你可以:</p>
+        <ul class="information_ul">
+            <li>分享音樂</li>
+            <li>分享新聞</li>
+            <li>買/賣商品</li>
+            <li>在討論區發表文章</li>
+        </ul>
+        <!-- <a class="scroll" href="/enroll">點我，馬上註冊</a> -->
+        <div class="information"> 
+            <a href="https://www.youtube.com/watch?v=9mplI5qEhxk" class="ad_picture_box"><img src="image/ad.jpg" class="advertisement_picture"></a>
+        </div>
+
+    </div>
+    </div>
+    <footer>
+        <p class="blink">~~~~~~~   Enjoy  Music  , Enjoy Life   ~~~~~~~</p>
+        <div class="for_line"></div>
+        <div>
+            Copyright@       2022/08/20       Author: Allen Chou       Contect by 30033allen@gmail.com       All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

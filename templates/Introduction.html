@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharing_Music</title>
+    <link rel="StyleSheet" href="Introduction/Introduction.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="Introduction/Introduction.js"></script>
+</head>
+<body>
+    <div class="left_box">
+        <div class="top_box">
+            <a id="logo_box" href="/"><img src="image/music_logo.webp" id="logo"></a>
+        </div>
+ 
+    </div>
+    <div class="lower_flex_box">
+        <div class="sharing_box">
+            <a class="sharing_photo_box"><img id="sharing_photo" src="image/profile.jpg"></a>
+            <p id="sharing_people_name">分享人 : {{sharing_people}}</p>
+        </div>
+        <div class="detail_box">
+            <div class="section_box">
+                <p class="label">音樂名稱 : </p>
+                <p class="content" style="font-size: 32px;">{{music_name}}</p>
+            </div>
+
+            <div class="section_box">
+                <p class="label">作者名 : </p>
+                <p class="content">{{author_name}}</p>
+            </div>
+
+            <div class="section_box">
+                <p class="label">相關敘述 : </p>
+                <p class="content">{{introduction}}</p>
+            </div>
+
+            <div class="section_box" style="margin-bottom: 10px;">
+                <p class="label">相關連結 : </p>
+                <a class="content" href={{url}} target="_blank">點我，試聽音樂</a>
+            </div>
+            <div class="docoration_box">
+                <a class="go_back_to_home" href="/music_page?page=1&type=最新">
+                        <span class="material-icons" style="font-size: 22px; margin-right: 5px; display: inline-block;vertical-align: middle;">keyboard_return</span><span style="display: inline-block;vertical-align: middle;">Go Back</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="query">
+        <div class="comment_label_box">
+            <span class="comment_label">發表評論</span>
+        </div>
+        <form method="get" action="comment_determin" class="in_form" style="width: 70%;">
+            <textarea rows="5" cols="70" placeholder="最多350字，請先登入" class="comment_content" name="comment"></textarea>
+            <div class="in_form">
+                <input type="submit" value="提交" id="submit"> <input type="reset" value="清空">
+            </div>
+        </form>
+    </div> -->
+       
+    
+    <footer>
+        <p class="blink">~~~~~~~   Enjoy  Music  , Enjoy Life   ~~~~~~~</p>
+        <div class="for_line"></div>
+        <pre>
+            Copyright@       2022/08/20       Author: Allen Chou       Contect by 30033allen@gmail.com       All rights reserved.
+        </pre>
+    </footer>
+</body>
+</html>

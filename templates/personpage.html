@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{user_name}}'s Homepage</title>
+    <link rel="StyleSheet" href="personpage/personpage.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="personpage/personpage.js"></script>
+</head>
+<body>
+    <div class="big_flex_box">
+        <div class="right_box">
+            <div class="login">
+                <img src="image/profile.jpg" class="profile_photo">
+            </div>
+            <p class="login_title my_ad_title">會員資訊</p>
+            <ul class="information_ul">
+                <li><span class="left_li">會員名稱: </span><span class="right_li"> {{user_name}}</span></li><!-- <button>更改</button> -->
+                <li><span class="left_li">會員等級: </span><span class="right_li"> 1</span></li>
+                <li><span class="left_li">電子郵箱: </span><span class="right_li"> {{user_email}}</span></li><!-- <button>更改</button> -->
+                <!-- <li><span class="left_li"></span><span class="left_li"></span>發表文章數:</li> -->
+                <!-- <li><span class="left_li">最近登入:</span><span class="left_li"></span></li> -->
+            </ul>
+            <p class="login_title my_ad_title logout" id="logout">登出帳戶</p> 
+            <!-- <p class="login_title my_ad_title end_the_account">終結帳戶</p>  -->
+            <!-- <div class="information"> 
+                23333
+            </div> -->
+    
+        </div>
+    <div class="left_box">
+        <div class="top_box">
+            <div class="selection_bar">
+                <a class="selection" href="/"><span class="material-icons selection_icons">music_note</span>回系統首頁</a>
+                <a class="selection" href="/publish"><span class="material-icons selection_icons">feed</span>發表文章</a>
+                <!-- <a class="selection" href="/shopping_page"><span class="material-icons selection_icons">shopping_cart</span>購買紀錄</a>
+                <a class="selection" href="/discuss_page"><span class="material-icons selection_icons">groups</span>珍藏內容</a> -->
+            </div>
+        </div>
+        <article>
+            <div class="article_title">
+                <span class="material-icons">settings</span><h1 class="title_text">最新消息</h1>
+            </div>
+            <div class="article_center ">
+                <p class="article_text_box"><span class="system_article" id="system_article_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, culpa!</span></p>
+                <p class="article_text_box"><span class="system_article" id="system_article_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, culpa!</span></p>
+                <p class="article_text_box"><span class="system_article" id="system_article_3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, culpa!</span></p>
+                <p class="article_text_box"><span class="system_article" id="system_article_4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, culpa!</span></p>
+                <p class="article_text_box"><span class="system_article" id="system_article_5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, culpa!</span></p>
+            </div>
+            <div class="article_page">
+                <span class="material-icons article_icon" style="font-size:24px; display: inline-block; vertical-align: middle;" id="left_button">chevron_left</span>
+                <span style="display: inline-block; vertical-align: middle; margin-left: 10px; margin-right: 10px;"><span>Page:</span><span id="page_number"> 1</span></span>
+                <span class="material-icons article_icon" style="font-size:24px; vertical-align: middle;" id="right_button">chevron_right</span>
+            </div>
+            <!-- s -->
+            <!-- <div>
+                <div class="music_box_left">
+                    <a><img src="image/wheveryouare.jfif" class="music_photo"></a>
+                    <div class="details_box">
+                        <div class="details_line"><span>曲名:</span><a class="details_text">wherever you are</a></div>
+                        <div class="details_line"><span>作者:</span><a class="details_text">MapleStory Team</a></div>
+                        <div class="details_line"><span>分享者:</span><a class="details_text">JOJO</a></div>
+                        <div class="details_line"><span>左鍵:</span><a class="details_text">點我，看更多</a></div>
+                    </div>
+                </div>
+                <div class="music_box_left">
+                    <a><img src="image/wheveryouare.jfif" class="music_photo"></a>
+                    <div class="details_box">
+                        <div class="details_line"><span>曲名:</span><a class="details_text">wherever you are</a></div>
+                        <div class="details_line"><span>作者:</span><a class="details_text">MapleStory Team</a></div>
+                        <div class="details_line"><span>分享者:</span><a class="details_text">JOJO</a></div>
+                        <div class="details_line"><span>左鍵:</span><a class="details_text">點我，看更多</a></div>
+                    </div>
+                </div>
+                <div class="music_box_left">
+                    <a><img src="image/wheveryouare.jfif" class="music_photo"></a>
+                    <div class="details_box">
+                        <div class="details_line"><span>曲名:</span><a class="details_text">wherever you are</a></div>
+                        <div class="details_line"><span>作者:</span><a class="details_text">MapleStory Team</a></div>
+                        <div class="details_line"><span>分享者:</span><a class="details_text">JOJO</a></div>
+                        <div class="details_line"><span>左鍵:</span><a class="details_text">點我，看更多</a></div>
+                    </div>
+                </div>
+                <div class="music_box_left">
+                    <a><img src="image/wheveryouare.jfif" class="music_photo"></a>
+                    <div class="details_box">
+                        <div class="details_line"><span>曲名:</span><a class="details_text">wherever you are</a></div>
+                        <div class="details_line"><span>作者:</span><a class="details_text">MapleStory Team</a></div>
+                        <div class="details_line"><span>分享者:</span><a class="details_text">JOJO</a></div>
+                        <div class="details_line"><span>左鍵:</span><a class="details_text">點我，看更多</a></div>
+                    </div>
+                </div> -->
+                <div class="docoration_box"></div>
+            </div>
+            
+        </article>
+    </div>
+    
+    </div>
+    <footer>
+        <p class="blink">~~~~~~~   Enjoy  Music  , Enjoy Life   ~~~~~~~</p>
+        <div class="for_line"></div>
+        <div>
+            Copyright@       2022/08/20       Author: Allen Chou       Contect by 30033allen@gmail.com       All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

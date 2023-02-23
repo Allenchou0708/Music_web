@@ -1,0 +1,139 @@
+a{
+    text-decoration: none;
+}
+body{
+    background-color: rgb(10, 10, 68);
+    margin:0px;
+}
+.left_box{
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.top_box{
+    display:flex;
+    align-items: flex-end;
+    margin-bottom: 0px;
+    position: relative;
+    width: 98%;
+}
+#logo_box{
+    display: inline-block;
+    width: 28%;
+}
+#logo{
+    width:100%;
+    height:100px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    /* position:absolute;
+    left: 5px; */
+}
+article{
+    background-color: lightblue;
+}
+.title_text{
+    margin-top: 0px;
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 36px;
+    font-weight: bolder;
+}
+.article_title{
+    padding-top: 15px;
+    margin-left: 10px;
+}
+.article_center{
+    width:80%;
+    /* text-align: center; */
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.big_button{
+    display: inline-block;
+    width: 45%;
+    background-color:  rgb(35, 35, 172);
+    color: antiquewhite;
+    text-align: center;
+    margin: 15px 2%;
+    padding: 20px 0px;
+    font-size: 28px;
+    letter-spacing:3px;
+}
+.big_button:hover{
+    display: inline-block;
+    width: 45%;
+    background-color: rgb(43, 221, 234);
+    color:yellow;
+    text-align: center;
+    margin: 15px 2%;
+    padding: 20px 0px;
+    font-size: 28px;
+    letter-spacing:3px;
+}
+.article_page{
+    text-align: center;
+    margin:35px 0px;
+}
+/* .flex-center-music-div{
+    display: flex;
+    justify-items: center;
+    background-color: blue;
+    flex-wrap: wrap; 
+} */
+
+
+footer{ /*I have set the height and width*/
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    color:antiquewhite;
+    text-align: center;
+}
+.docoration_box{
+    position: relative;
+    height: 70px;
+}
+.go_back_to_home{
+    margin-top: 5px;
+    position: absolute;
+    right: 10%;
+    font-size: 20px;
+    padding: 10px; 
+    background-color: rgb(35, 35, 172);
+    color:antiquewhite;
+}
+.go_back_to_home:hover{
+    position: absolute;
+    right: 10%;
+    font-size: 20px;
+    padding: 10px; 
+    background-color: rgb(43, 221, 234);
+    color:yellow;
+}
+.blink{
+    animation: blink 7s infinite;
+}
+.submit_area{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+@keyframes blink{
+    0%{
+        color: antiquewhite;
+    }
+    50%{
+        color: rgb(10, 10, 68);
+    }
+    100%{
+        color: antiquewhite;
+    }
+}
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music_Page</title>
+    <link rel="StyleSheet" href="music_page/music_page.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="music_page/music_page.js"></script>
+</head>
+<body>
+    <div class="big_flex_box">
+    <div class="left_box">
+        <div class="top_box">
+            <a id="logo_box" href="/"><img src="image/music_logo.webp" id="logo"></a>
+        </div>
+        <article>
+            <div class="article_title">
+                <span class="material-icons">queue_music</span><h1 class="title_text">為您挑選</h1>
+                
+                <div class="right_option">
+                    <button class="music_button" id="publish">分享音樂</button>
+                    <form class="sorting_form" id="sorting_form" name="sorting_form">
+                        <label class="sorting_label">排序方式 : </label>
+                        <select class="option" id="sorting_way" name="sorting_way">
+                            <option>最新</option>
+                            <option>最舊</option>
+                            <!-- <option>最熱門</option> -->
+                        </select>
+                    </form>
+                </div>
+                
+            </div>
+            <div>
+                {%for i in musics%}
+                    <div class="music_box_left">
+                        <a href={{i["super_link"]}}><img src="image/wheveryouare.jfif" class="music_photo"></a>
+                        <div class="details_box">
+                            <div class="details_line"><span>曲名:</span><a class="details_text">{{i["music_name"]}}</a></div>
+                            <div class="details_line"><span>作者:</span><a class="details_text">{{i["author_name"]}}</a></div>
+                            <div class="details_line"><span>分享者:</span><a class="details_text">{{i["sharing_people"]}}</a></div>
+                            <div class="see_more_box"><a class="details_text see_more" href={{i["super_link"]}}>查看詳情</a></div>
+                        </div>
+                    </div>
+                {%endfor%}
+                <div class="article_page">
+                    {% if last_page %}
+                        <a href={{last_page}} class="material-icons article_icon" style="font-size:24px; display: inline-block; vertical-align: middle;" id="left_button">chevron_left</a>
+                    {% else %}
+                        <a  class="material-icons article_icon" style="font-size:24px; display: inline-block; vertical-align: middle;" id="left_button">chevron_left</a>
+                    {% endif %}
+                    <span style="display: inline-block; vertical-align: middle; margin-left: 10px; margin-right: 10px;"><span>Page:</span><span id="page_number"> {{page}}</span></span>
+                    {% if next_page %}
+                        <a href={{next_page}} class="material-icons article_icon" style="font-size:24px; vertical-align: middle;" id="right_button">chevron_right</a>
+                    {% else %}
+                        <a class="material-icons article_icon" style="font-size:24px; vertical-align: middle;" id="right_button">chevron_right</a>
+                    {% endif %}
+                </div>
+            </div>
+            
+        </article>
+    </div>
+    <div class="right_box">
+        <p class="login_title" id="test">會員登入</p>
+        <div class="login">
+            <form method="get" id="login_form" action="/determin">
+                <span class="form_row">
+                    <label class="label">帳號:</label>
+                    <input class="queation" type="text" placeholder="請輸入帳號" name="account">
+                </span>
+                <br>
+                <span class="form_row">
+                    <label class="label">密碼:</label>
+                    <input class="queation" type="password" placeholder="請輸入密碼" name="passwd">
+                </span>
+                <br>
+                <span class="form_row" style="display: inline-block;">
+                    <input type="submit" value="送出" class="login_button">
+                    <!-- <input type="button" value="忘記密碼" class="login_button" id=""> -->
+                    <input type="button" value="申請帳號" class="login_button" id="enroll_in">
+                    <input type="button" value="忘記密碼" class="login_button" id="forget">
+                </span>
+            </form>
+        </div>
+        <p class="login_title my_ad_title">加入會員，你可以:</p>
+        <ul class="information_ul" id="my_ul">
+            <li>分享音樂</li>
+            <li>分享新聞</li>
+            <li>買/賣商品</li>
+            <li>在討論區發表文章</li>
+        </ul>
+        <!-- <a class="scroll" href="/enroll">點我，馬上註冊</a> -->
+        <p class="login_title my_ad_title">細項分類</p>
+        <ul class="list_ul" id="link_ul">
+            <li class="killer_queen_li">藍調</li>
+            <li class="killer_queen_li">古典樂</li>
+            <li class="killer_queen_li">搖滾樂</li>
+            <li class="killer_queen_li">爵士樂</li>
+            <li class="killer_queen_li">電子音樂</li>
+            <li class="killer_queen_li">中文歌曲</li>
+            <li class="killer_queen_li">台語歌曲</li>
+        </ul>
+
+    </div>
+    </div>
+    <footer>
+        <p class="blink">~~~~~~~   Enjoy  Music  , Enjoy Life   ~~~~~~~</p>
+        <div class="for_line"></div>
+        <div>
+            Copyright@       2022/08/20       Author: Allen Chou       Contect by 30033allen@gmail.com       All rights reserved.
+        </div>
+        <!-- <div>
+            {{now_page}}
+        </div> -->
+    </footer>
+</body>
+</html>
