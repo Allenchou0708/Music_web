@@ -17,10 +17,13 @@ I design a web as a platform to let people share their loved music on this websi
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. insert the URL http://127.0.0.1:5000/ on the browser while music_background.py is running.
  
 ## Demo Photo
-The homepage
+1. The homepage
 ![demo](https://github.com/Allenchou0708/Music_web/blob/main/Demo_photo/demo_2.png)
 ![demo](https://github.com/Allenchou0708/Music_web/blob/main/Demo_photo/demo_1.png)
-The 
+
+2. The Music sharing page and the music detail
 ![demo](https://github.com/Allenchou0708/Music_web/blob/main/Demo_photo/demo_3.png)
 ![demo](https://github.com/Allenchou0708/Music_web/blob/main/Demo_photo/demo_4.png)
+
+3. Some forms to fill for Account Registration
 ![demo](https://github.com/Allenchou0708/Music_web/blob/main/Demo_photo/demo_5.png)
