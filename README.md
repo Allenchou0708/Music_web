@@ -1,6 +1,6 @@
 # Music_web
 
-toc
+[toc] 
 
 ## 目的
 把妹
