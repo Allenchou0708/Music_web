@@ -5,9 +5,9 @@
 With this project, I design a place where people can share their music on.
 
 ## What skill is this project used?
-* The front-end are made by native Html,CSS and Javascript.
-* The back-end used Python Flask to control the route and usage of Database.
-* The database used Mongodb to store the user data and the music data.
+&nbsp;&nbsp;* The front-end are made by native Html,CSS and Javascript.
+&nbsp;&nbsp;* The back-end used Python Flask to control the route and usage of Database.
+&nbsp;&nbsp;* The database used Mongodb to store the user data and the music data.
   
 ## How to run this web?
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. git clone the repository.
