@@ -12,5 +12,7 @@ The database used Mongodb to store the user data and the music data.
   
 ## How to run this web?
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. git clone the repository.
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. set up the environment and run `python music_background.py`.
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. insert the URL http://127.0.0.1:5000/ while music_background.py is running.
