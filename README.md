@@ -1,13 +1,10 @@
 # Music_web
 
-[toc] 
+## What is this project about?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With this project, I design a place where people can share their music on.
 
-## 目的
-把妹
-下雨天
-
-## 操作流程
-
-## 
-
-## 
+##What skill is this project used?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+## How to run this web?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;git clone the repository.
