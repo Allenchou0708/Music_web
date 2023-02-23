@@ -14,7 +14,7 @@ I design a web as a platform to let people share their loved music on this websi
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. set up the environment and run `python music_background.py`.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. insert the URL http://127.0.0.1:5000/ while music_background.py is running.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. insert the URL http://127.0.0.1:5000/ on the browser while music_background.py is running.
  
 ## Demo Photo
 ![demo](https://github.com/Allenchou0708/Music_web/blob/main/Demo_photo/demo_2.png)
